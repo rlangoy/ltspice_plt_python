@@ -1,0 +1,9 @@
+* D:\Users\rune\Documents\Skole\AnalogTek\ltspice_plt_python\Design_Files\VoltageDivider.asc
+R1 Vout 0 {var_r1}
+R2 Vout 0 1K
+R3 N001 Vout 1K
+V1 N001 0 10
+.op
+.step dec param var_r1 10 10K 100
+.backanno
+.end
