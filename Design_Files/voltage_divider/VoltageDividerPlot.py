@@ -1,7 +1,7 @@
 import ltspice
 import matplotlib.pyplot as plt
-import numpy as np
-import os
+import seaborn as sns
+sns.set_theme(style="whitegrid")
 
 #Input Plot file
 filepath = r'VoltageDivider.raw'
@@ -24,7 +24,7 @@ yAxisValues = l.get_data('v(vout)')
 plt.plot(xAxisValues, yAxisValues,label='Vout')
 
 #Sett akse navn
-plt.xlabel('Motstandsverdi R1 [%s]'%ohm)
+plt.xlabel('R1 [%s]'%ohm)
 plt.ylabel('Vout [V]')
 
 #Sett navn på plottet
