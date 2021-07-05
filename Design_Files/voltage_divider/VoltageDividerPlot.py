@@ -4,6 +4,7 @@ import seaborn as sns
 sns.set_theme(style="whitegrid")
 
 #Input Plot file
+#Filen Genereres automatisk ettter at simuleringen har vært kjørt!
 filepath = r'VoltageDivider.raw'
 l = ltspice.Ltspice(filepath)
 l.parse() # Data loading sequence. It may take few minutes for huge file.
