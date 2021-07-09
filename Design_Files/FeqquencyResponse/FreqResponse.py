@@ -10,7 +10,6 @@ import numpy as np
 from matplotlib.ticker import (AutoMinorLocator, MultipleLocator)
 
 
-
 filepath = r'FreqResponse.raw'
 l = ltspice.Ltspice(filepath)
 l.parse() # Data loading sequence. It may take few minutes for huge file.
